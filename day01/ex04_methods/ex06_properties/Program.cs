@@ -6,7 +6,12 @@ namespace ex06_properties
     {
         private int temperature; //온도
 
-        private int Year;  // 제작년도
+        private int year;  // 제작년도 멤버변수
+        public int Year
+        {
+            get { return year; }
+            set { year = value; }
+        } // 일반 프로퍼티
         public string Name{get; set;} // 자동 프로퍼티
 
         // Rosalyn VS 개발서포트
@@ -30,10 +35,13 @@ namespace ex06_properties
             }
         }
 
-        public int Year { get => Year1; set => Year1 = value; }
-        public int Year1 { get => Year2; set => Year2 = value; }
-        public int Year2 { get => Year3; set => Year3 = value; }
-        public int Year3 { get => Year; set => Year = value; }
+        // 생성자
+        public Kiturami(int year, string name, int temperature)
+        {
+            Year = year;
+            Name = name;
+            Temperature = temperature;
+        }
 
         //public void SetTemperature(int temp)
         //{
@@ -66,15 +74,23 @@ namespace ex06_properties
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("보일러 시작");
-            Kiturami boiler = new Kiturami();
-            //boiler.temperature = 610; // 막아버림
-            //Console.WriteLine($"보일로 온도는 {boiler.temperature}도"); //막아버림
-            //boiler.SetTemperature(460);
-            //Console.WriteLine($"보일로 온도는{boiler.GetTemperature()}도");
-            boiler.Temperature = 400;
-            Console.WriteLine($"보일로 온도는{boiler.Temperature()}도");
-            boiler.ON();
+            ////Console.WriteLine("보일러 시작");
+            ////Kiturami boiler = new Kiturami();
+            //////boiler.temperature = 610; // 막아버림
+            //////Console.WriteLine($"보일로 온도는 {boiler.temperature}도"); //막아버림
+            //////boiler.SetTemperature(460);
+            //////Console.WriteLine($"보일로 온도는{boiler.GetTemperature()}도");
+            ////boiler.Temperature = 400;
+            ////Console.WriteLine($"보일로 온도는{boiler.Temperature()}도");
+            ////boiler.ON();
+
+            //boiler.Name = "귀뚜라미";
+
+            Kiturami kiturami = new Kiturami(name: "라미", temperature: 25, year: 2023);
+            Console.WriteLine(kiturami.Name);
+            Console.WriteLine($"제작년도: {kiturami.Year}");
+            kiturami.Temperature = 180;
+            Console.WriteLine($"{kiturami.Name} 현재온도는 {kiturami.Temperature}");
         }
     }
 }

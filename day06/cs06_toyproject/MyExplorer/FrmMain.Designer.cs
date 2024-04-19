@@ -155,6 +155,7 @@
             LsvFile.TabIndex = 0;
             LsvFile.UseCompatibleStateImageBehavior = false;
             LsvFile.View = View.Details;
+            LsvFile.DoubleClick += LsvFile_DoubleClick;
             LsvFile.MouseDown += LsvFile_MouseDown;
             // 
             // ClhTitle
@@ -208,35 +209,35 @@
             // TstMenuLargeIcon
             // 
             TstMenuLargeIcon.Name = "TstMenuLargeIcon";
-            TstMenuLargeIcon.Size = new Size(180, 22);
+            TstMenuLargeIcon.Size = new Size(138, 22);
             TstMenuLargeIcon.Text = "큰 아이콘";
             TstMenuLargeIcon.Click += TstMenuLargeIcon_Click;
             // 
             // TstMenuSmallIcon
             // 
             TstMenuSmallIcon.Name = "TstMenuSmallIcon";
-            TstMenuSmallIcon.Size = new Size(180, 22);
+            TstMenuSmallIcon.Size = new Size(138, 22);
             TstMenuSmallIcon.Text = "작은 아이콘";
             TstMenuSmallIcon.Click += TstMenuSmallIcon_Click;
             // 
             // TstMenuListIcon
             // 
             TstMenuListIcon.Name = "TstMenuListIcon";
-            TstMenuListIcon.Size = new Size(180, 22);
+            TstMenuListIcon.Size = new Size(138, 22);
             TstMenuListIcon.Text = "목록";
             TstMenuListIcon.Click += TstMenuListIcon_Click;
             // 
             // TstMenuDetailIcon
             // 
             TstMenuDetailIcon.Name = "TstMenuDetailIcon";
-            TstMenuDetailIcon.Size = new Size(180, 22);
+            TstMenuDetailIcon.Size = new Size(138, 22);
             TstMenuDetailIcon.Text = "자세히";
             TstMenuDetailIcon.Click += TstMenuDetailIcon_Click;
             // 
             // TstMenuTaliIcon
             // 
             TstMenuTaliIcon.Name = "TstMenuTaliIcon";
-            TstMenuTaliIcon.Size = new Size(180, 22);
+            TstMenuTaliIcon.Size = new Size(138, 22);
             TstMenuTaliIcon.Text = "타일";
             TstMenuTaliIcon.Click += TstMenuTaliIcon_Click;
             // 

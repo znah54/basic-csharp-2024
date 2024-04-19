@@ -153,6 +153,27 @@ namespace MyExplorer
         {
             LsvFile.View = View.Tile;
         }
+
+        // 리스트뷰 아이템 더블클릭 이벤트핸들러, 실행파일 실행
+        private void LsvFile_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+            var extension = LsvFile.SelectedItems[0].Text.Split(".")[1];
+            if (extension == "exe")
+            {   // 실행파일이면
+                //MessageBox.Show(LsvFile.SelectedItems[0].Text); // 디버깅용
+                //실행파일의 경로는 TxtPath
+                var fullPath = TxtPath.Text + "\\" + LsvFile.SelectedItems[0].Text;
+                Process.Start(fullPath);
+            }  
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
 

@@ -306,6 +306,10 @@
 ## 7일차
 - 토이 프로젝트
     - 윈도우 탐색기 앱 종료
+    
+
+
+https://github.com/znah54/basic-csharp-2024/assets/50408406/c974678a-d2c3-46ca-9099-c2cf746f87c7
 
 
 

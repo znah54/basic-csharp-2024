@@ -45,11 +45,11 @@
             ImgLargeIcon = new ImageList(components);
             CmsFiles = new ContextMenuStrip(components);
             보기ToolStripMenuItem = new ToolStripMenuItem();
-            toolStripTextBox1 = new ToolStripTextBox();
-            toolStripTextBox2 = new ToolStripTextBox();
-            toolStripTextBox3 = new ToolStripTextBox();
-            toolStripTextBox4 = new ToolStripTextBox();
-            toolStripTextBox5 = new ToolStripTextBox();
+            TstMenuLargeIcon = new ToolStripMenuItem();
+            TstMenuSmallIcon = new ToolStripMenuItem();
+            TstMenuListIcon = new ToolStripMenuItem();
+            TstMenuDetailIcon = new ToolStripMenuItem();
+            TstMenuTaliIcon = new ToolStripMenuItem();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
@@ -200,40 +200,45 @@
             // 
             // 보기ToolStripMenuItem
             // 
-            보기ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripTextBox1, toolStripTextBox2, toolStripTextBox3, toolStripTextBox4, toolStripTextBox5 });
+            보기ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TstMenuLargeIcon, TstMenuSmallIcon, TstMenuListIcon, TstMenuDetailIcon, TstMenuTaliIcon });
             보기ToolStripMenuItem.Name = "보기ToolStripMenuItem";
             보기ToolStripMenuItem.Size = new Size(98, 22);
             보기ToolStripMenuItem.Text = "보기";
             // 
-            // toolStripTextBox1
+            // TstMenuLargeIcon
             // 
-            toolStripTextBox1.Name = "toolStripTextBox1";
-            toolStripTextBox1.Size = new Size(100, 23);
-            toolStripTextBox1.Text = "큰 아이콘";
+            TstMenuLargeIcon.Name = "TstMenuLargeIcon";
+            TstMenuLargeIcon.Size = new Size(180, 22);
+            TstMenuLargeIcon.Text = "큰 아이콘";
+            TstMenuLargeIcon.Click += TstMenuLargeIcon_Click;
             // 
-            // toolStripTextBox2
+            // TstMenuSmallIcon
             // 
-            toolStripTextBox2.Name = "toolStripTextBox2";
-            toolStripTextBox2.Size = new Size(100, 23);
-            toolStripTextBox2.Text = "작은 아이콘";
+            TstMenuSmallIcon.Name = "TstMenuSmallIcon";
+            TstMenuSmallIcon.Size = new Size(180, 22);
+            TstMenuSmallIcon.Text = "작은 아이콘";
+            TstMenuSmallIcon.Click += TstMenuSmallIcon_Click;
             // 
-            // toolStripTextBox3
+            // TstMenuListIcon
             // 
-            toolStripTextBox3.Name = "toolStripTextBox3";
-            toolStripTextBox3.Size = new Size(100, 23);
-            toolStripTextBox3.Text = "목록";
+            TstMenuListIcon.Name = "TstMenuListIcon";
+            TstMenuListIcon.Size = new Size(180, 22);
+            TstMenuListIcon.Text = "목록";
+            TstMenuListIcon.Click += TstMenuListIcon_Click;
             // 
-            // toolStripTextBox4
+            // TstMenuDetailIcon
             // 
-            toolStripTextBox4.Name = "toolStripTextBox4";
-            toolStripTextBox4.Size = new Size(100, 23);
-            toolStripTextBox4.Text = "자세히";
+            TstMenuDetailIcon.Name = "TstMenuDetailIcon";
+            TstMenuDetailIcon.Size = new Size(180, 22);
+            TstMenuDetailIcon.Text = "자세히";
+            TstMenuDetailIcon.Click += TstMenuDetailIcon_Click;
             // 
-            // toolStripTextBox5
+            // TstMenuTaliIcon
             // 
-            toolStripTextBox5.Name = "toolStripTextBox5";
-            toolStripTextBox5.Size = new Size(100, 23);
-            toolStripTextBox5.Text = "타일";
+            TstMenuTaliIcon.Name = "TstMenuTaliIcon";
+            TstMenuTaliIcon.Size = new Size(180, 22);
+            TstMenuTaliIcon.Text = "타일";
+            TstMenuTaliIcon.Click += TstMenuTaliIcon_Click;
             // 
             // FrmMain
             // 
@@ -274,10 +279,10 @@
         private ImageList ImgLargeIcon;
         private ContextMenuStrip CmsFiles;
         private ToolStripMenuItem 보기ToolStripMenuItem;
-        private ToolStripTextBox toolStripTextBox1;
-        private ToolStripTextBox toolStripTextBox2;
-        private ToolStripTextBox toolStripTextBox3;
-        private ToolStripTextBox toolStripTextBox4;
-        private ToolStripTextBox toolStripTextBox5;
+        private ToolStripMenuItem TstMenuLargeIcon;
+        private ToolStripMenuItem TstMenuSmallIcon;
+        private ToolStripMenuItem TstMenuListIcon;
+        private ToolStripMenuItem TstMenuDetailIcon;
+        private ToolStripMenuItem TstMenuTaliIcon;
     }
 }

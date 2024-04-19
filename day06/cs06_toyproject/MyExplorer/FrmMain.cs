@@ -127,6 +127,32 @@ namespace MyExplorer
                 CmsFiles.Show(LsvFile, e.Location); // 마우스 클릭한 위치에 쇼
             }
         }
+
+        private void TstMenuLargeIcon_Click(object sender, EventArgs e)
+        {
+            LsvFile.View = View.LargeIcon;
+        }
+
+        private void TstMenuSmallIcon_Click(object sender, EventArgs e)
+        {
+            LsvFile.View = View.SmallIcon;
+
+        }
+
+        private void TstMenuListIcon_Click(object sender, EventArgs e)
+        {
+            LsvFile.View = View.List;
+        }
+
+        private void TstMenuDetailIcon_Click(object sender, EventArgs e)
+        {
+            LsvFile.View = View.Details;
+        }
+
+        private void TstMenuTaliIcon_Click(object sender, EventArgs e)
+        {
+            LsvFile.View = View.Tile;
+        }
     }
 }
 

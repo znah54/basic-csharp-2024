@@ -11,14 +11,14 @@
         /// 사용 중인 모든 리소스를 정리합니다.
         /// </summary>
         /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing && (components != null))
+        //    {
+        //        components.Dispose();
+        //    }
+        //    base.Dispose(disposing);
+        //}
 
         #region Windows Form 디자이너에서 생성한 코드
 
@@ -106,12 +106,14 @@
             this.MnuBookDivision.Name = "MnuBookDivision";
             this.MnuBookDivision.Size = new System.Drawing.Size(180, 22);
             this.MnuBookDivision.Text = "책장르 관리";
+            this.MnuBookDivision.Click += new System.EventHandler(this.MnuBookDivision_Click);
             // 
             // MnuBookInfo
             // 
             this.MnuBookInfo.Name = "MnuBookInfo";
             this.MnuBookInfo.Size = new System.Drawing.Size(180, 22);
             this.MnuBookInfo.Text = "책정보 관리";
+            this.MnuBookInfo.Click += new System.EventHandler(this.MnuBookInfo_Click);
             // 
             // MnuMembers
             // 
@@ -141,7 +143,7 @@
             // 이프로그램은ToolStripMenuItem
             // 
             this.이프로그램은ToolStripMenuItem.Name = "이프로그램은ToolStripMenuItem";
-            this.이프로그램은ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.이프로그램은ToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.이프로그램은ToolStripMenuItem.Text = "이 프로그램은...(&A)";
             // 
             // statusStrip1

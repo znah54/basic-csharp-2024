@@ -58,11 +58,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmBookInfo - 복사본.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBookInfo - 복사본.Designer.cs">
+      <DependentUpon>FrmBookInfo - 복사본.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBookDivision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBookDivision.Designer.cs">
+      <DependentUpon>FrmBookDivision.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLoginUser.cs">
       <SubType>Form</SubType>
@@ -76,10 +88,17 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\Common.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBookInfo - 복사본.resx">
+      <DependentUpon>FrmBookInfo - 복사본.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBookDivision.resx">
+      <DependentUpon>FrmBookDivision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLoginUser.resx">
       <DependentUpon>FrmLoginUser.cs</DependentUpon>

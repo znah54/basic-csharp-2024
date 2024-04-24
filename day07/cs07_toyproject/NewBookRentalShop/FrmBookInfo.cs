@@ -284,7 +284,7 @@ namespace NewBookRentalShop
                 DtpReleaseDate.Value = DateTime.Parse(selData.Cells[5].Value.ToString());
                 TxtIsbn.Text = selData.Cells[6].Value.ToString();
                 // "20000" 가격을 숫자형으로 형변환해주는
-                // 
+                // 거의 모든 타입에 *.Parse(string) 메서드가 존재
                 NudPrice.Value = Decimal.Parse(selData.Cells[7].Value.ToString());
                 TxtBookIdx.ReadOnly=true; // UPDATE시는 PK인 Division을 변경하면 안됨
 
@@ -293,6 +293,15 @@ namespace NewBookRentalShop
                 CboDivision.SelectedValue = selData.Cells[2].Value; // 구분코드로 선택해야함!!
 
                 isNew = false; // UPDATE
+            }
+        }
+
+        private void TxtIsbn_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // 숫자이외에는 전부 막아버림
+            if(!char.IsDigit(e.KeyChar) && (e.KeyChar != '.') && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

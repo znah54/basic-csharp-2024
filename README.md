@@ -326,15 +326,37 @@ https://github.com/znah54/basic-csharp-2024/assets/50408406/c974678a-d2c3-46ca-9
 
 ## 8일차
 - 토이 프로젝트
+    - 도서관리 앱 관리 화면
+        - 앱사용자 관리완료
+
+## 9일차
+- 토이프로젝트
+    - 기존 만들어진 폼을 복사해서 변경할 시
+        - ***.cs클래스 명, 생성자, *.Designer.cs에 있는 클래스명** 3군데 이름 변경
+
+    - 도서관리 앱
+        - 공통 클래스...
+        - 책장르 관리
+        - 책정보 관리
+
+## 10일차
+- 토이 프로젝트
+    - 도서관리 앱
+        - 도서회원 관리
+        - 대출관리
+        - 이 프로그램은
+
+        ![책대여프로그램](https://github.com/znah54/basic-csharp-2024/blob/main/images/cs006.png?raw=true)
+
+## 나머지(WPF/미니프로젝트 시간 다시)
+- Pending 
     - Modern UI 앱(UI 디자인)
     - IoT Dummy 앱 with SQL Server(Iot, DB)
-    
     - 국가교통정보센터 CCTV뷰 앱(OpenAPI, Nuget dll, Network, UI디자인, 비동기메서드)
-
 
 ## 개인 포트폴리오
 - 심플 메모장앱
-    - 기능
+    - 기능...
     - 특징
     - 배운점
 

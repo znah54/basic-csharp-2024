@@ -18,6 +18,9 @@ namespace NewBookRentalShop
         FrmLoginUser frmLoginUser = null; // 객체를 메서드로 생성
         FrmBookDivision frmBookDivison = null;
         FrmBookInfo frmBookInfo = null;
+        FrmMember frmMember = null;
+        FrmBookRental frmBookrental = null;
+
         public FrmMain()
         {
             InitializeComponent();
@@ -30,6 +33,8 @@ namespace NewBookRentalShop
             frm.StartPosition = FormStartPosition.CenterScreen;
             frm.TopMost = true; // 가장 윈도우화면 상단에
             frm.ShowDialog();
+
+            LblLoginId.Text = Helper.Common.LoginId;
         }
 
         private void MnuLoginUsers_Click(object sender, EventArgs e)
@@ -47,6 +52,17 @@ namespace NewBookRentalShop
         {
             frmBookInfo = ShowActiveForm(frmBookInfo,typeof(FrmBookInfo)) as FrmBookInfo;
         }
+
+        private void MnuMembers_Click(object sender, EventArgs e)
+        {
+            frmMember =ShowActiveForm(frmMember, typeof(FrmMember)) as FrmMember;
+        }
+
+        private void MnuBookRental_Click(object sender, EventArgs e)
+        {
+            frmBookrental = ShowActiveForm(frmBookrental, typeof(FrmBookRental)) as FrmBookRental;
+        }
+
         Form ShowActiveForm(Form form, Type type)
         {
             if(form == null) //화면이 한번도 안열였으면
@@ -73,6 +89,34 @@ namespace NewBookRentalShop
             return form;
         }
 
+        private void MnuAbout_Click(object sender, EventArgs e)
+        {
+            FrmAbout popup = new FrmAbout();
+            popup.StartPosition = FormStartPosition.CenterParent;
+            popup.ShowDialog();
+        }
+
+        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
+        { 
+            var res = MessageBox.Show(this, "종료하시겠습니까?", "종료여부", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(res == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                Environment.Exit(0);
+            }
+        }
+
+        private void MnuExit_Click(object sender, EventArgs e)
+        {
+            var res = MessageBox.Show(this, "종료하시겠습니까?", "종료여부", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+        }
         // 책 장르관리 메뉴 클릭 이벤트핸들러
     }
 }

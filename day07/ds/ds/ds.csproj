@@ -46,16 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include=".Designer - 복사본.cs">
+      <DependentUpon>DietCare.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DietCare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HealthCare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>HealthCare.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelfCare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelfCare.Designer.cs">
+      <DependentUpon>SelfCare.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="DietCare.resx">
+      <DependentUpon>DietCare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HealthCare.resx">
+      <DependentUpon>HealthCare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelfCare.resx">
+      <DependentUpon>SelfCare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

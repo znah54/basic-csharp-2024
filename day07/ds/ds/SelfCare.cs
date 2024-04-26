@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ds
 {
-    public partial class Form1 : Form
+    public partial class SelfCare : Form
     {
-        public Form1()
+        public SelfCare()
         {
             InitializeComponent();
         }
